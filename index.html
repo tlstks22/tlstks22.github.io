@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: chartreuse; text-align: center;}
+        article > div{display: inline-block;position: absolute; background-color: rgb(246, 246, 171); width: 300px;height: 300px; padding: 5px;
+        text-align: center;}
+        #sub{position: absolute}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>한국의 멸종위기 동물</h1>
+        <h3 style="float: right;">202402944 남영우</h3>   
+        <h4 style="right: 60%;">사진을 클릭해주세요</h4>
+    </header>
+        <div id="sub" style="left: 60%; top: 8%;">
+        <button id="qize" onclick="qize";>퀴즈</button>
+        </div>
+        <script>
+            document.getElementById("qize").addEventListener('click',mello);
+            function mello(){
+                alert("OX퀴즈입니다. O 또는 X를 입력해주세요.")
+                let q1= prompt("수달은 족제비과에 속한다.");
+                if (q1=="O"){alert("정답입니다.");}
+                else {alert("오답입니다.");}
+                let q2= prompt("구렁이는 제주도에 서식한다.");
+                if (q2=="X"){alert("정답입니다.");}
+                else {alert("오답입니다.");}
+                let q3= prompt("담비의 짝짓기 시기는 4~5월이다.");
+                if (q3=="X"){alert("정답입니다.");}
+                else {alert("오답입니다.");}
+            }
+        </script>
+    <article>
+        <div style="right: 72%; top: 130px;"><a href="page1.html" target="_blank"><img src="midia/bear.png" width="300px" height="300px"></a></div>
+        <div style="right: 51%; top: 130px;"><a href="page2.html" target="_blank"><img src="midia/dambi.webp" width="300px" height="300px"></a></div>
+        <div style="right: 30%; top: 130px;"><a href="page3.html" target="_blank"><img src="midia/daramgi.jpg" width="300px" height="300px"></a></div>
+        <div style="right: 9%; top: 130px;"><a href="page4.html" target="_blank"><img src="midia/fox.webp" width="300px" height="300px"></a></div>
+        <div style="right: 72%; top: 460px;"><a href="page5.html" target="_blank"><img src="midia/outer.webp" width="300px" height="300px"></a></div>
+        <div style="right: 51%; top: 460px;"><a href="page6.html" target="_blank"><img src="midia/sak.jpg" width="300px" height="300px"></a></div>
+        <div style="right: 30%; top: 460px;"><a href="page7.html" target="_blank"><img src="midia/santang.jpg" width="300px" height="300px"></a></div>
+        <div style="right: 9%; top: 460px;"><a href="page8.html" target="_blank"><img src="midia/9lug.webp" width="300px" height="300px"></a></div>
+    </article>
+</body>
+</html>
